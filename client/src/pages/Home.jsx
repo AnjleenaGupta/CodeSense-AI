@@ -28,13 +28,12 @@ function Home(){
                 <div className="mt-8 flex gap-5">
 
 
-                 
-                      <Link
-to="/register"
-className="bg-cyan-400 text-black px-8 py-3 rounded-lg font-bold"
+              <button
+  onClick={() => window.location.href="/register"}
+  className="bg-cyan-400 text-black px-8 py-3 rounded-lg font-bold"
 >
- Start Reviewing 🚀
-</Link>  
+  Start Reviewing 🚀
+</button>   
                     
 
 

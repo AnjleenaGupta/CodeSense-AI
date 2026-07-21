@@ -20,11 +20,12 @@ function Register(){
 
 
     const handleSubmit=async(e)=>{
-
+const [loading,setLoading] = useState(false);
         e.preventDefault();
-
+console.log("Register button clicked", formData);
+setLoading(true);
         try{
-
+  console.log("Sending API request...");
             const res = await api.post(
                 "/auth/register",
                 formData
@@ -32,17 +33,23 @@ function Register(){
 
             console.log(res.data);
 
+        console.log("Response received:", res.data);
+
             alert("Registration Successful");
 
         }
         catch(error){
 
-            console.log(error);
+    console.log("FULL ERROR:", error);
 
-            alert(error.response?.data?.message || "Error");
+    alert(
+      error.message
+    );
 
-        }
-
+}
+finally{
+ setLoading(false);
+}
     };
 
 
