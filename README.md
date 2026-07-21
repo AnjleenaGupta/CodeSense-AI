@@ -75,64 +75,18 @@ It provides a VS Code-like coding experience with an integrated AI reviewer that
 # 📂 Project Structure
 CodeSense-AI
 │
-├── client # React Frontend
-│ │
-│ ├── public
-│ │
+├── client
 │ ├── src
-│ │ │
-│ │ ├── assets # Images and static files
-│ │ │
-│ │ ├── components # Reusable UI Components
-│ │ │ ├── CodeEditor.jsx
-│ │ │ ├── Navbar.jsx
-│ │ │ └── ProtectedRoute.jsx
-│ │ │
-│ │ ├── pages # Application Pages
-│ │ │ ├── Dashboard.jsx
-│ │ │ ├── Home.jsx
-│ │ │ ├── Login.jsx
-│ │ │ ├── Register.jsx
-│ │ │ ├── Review.jsx
-│ │ │ └── ReviewDetails.jsx
-│ │ │
-│ │ ├── services # API Services
-│ │ │ └── api.js
-│ │ │
-│ │ ├── App.jsx
-│ │ ├── App.css
-│ │ ├── index.css
-│ │ └── main.jsx
-│ │
-│ ├── package.json
-│ └── vite.config.js
+│ │ ├── components
+│ │ ├── pages
+│ │ └── services
 │
-│
-└── server # Node.js Backend
-│
-├── config # Database Configuration
-│ └── db.js
-│
-├── controllers # Business Logic
-│ ├── authController.js
-│ └── codeController.js
-│
-├── middleware # Authentication Middleware
-│ └── authMiddleware.js
-│
-├── models # MongoDB Models
-│ ├── User.js
-│ └── codeReview.js
-│
-├── routes # API Routes
-│ ├── authRoutes.js
-│ └── codeRoutes.js
-│
-├── utils
-│
-├── server.js # Server Entry Point
-├── package.json
-└── .env
+└── server
+├── controllers
+├── middleware
+├── models
+├── routes
+└── server.js
 
 ---
 
