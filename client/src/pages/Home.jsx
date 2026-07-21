@@ -28,7 +28,7 @@ function Home(){
                 <div className="mt-8 flex gap-5">
 
 
-                  import { Link } from "react-router-dom";
+                 
                       <Link
 to="/register"
 className="bg-cyan-400 text-black px-8 py-3 rounded-lg font-bold"
