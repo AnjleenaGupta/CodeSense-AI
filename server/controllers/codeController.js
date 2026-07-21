@@ -1,5 +1,5 @@
 import Groq from "groq-sdk";
-import CodeReview from "../models/CodeReview.js";
+import CodeReview from "../models/codeReview.js";
 const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY
 });
